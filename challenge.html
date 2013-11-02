@@ -1,0 +1,44 @@
+<!--
+    All rights reserved 2013 Henry Hirsch
+
+    This file is part of pi-challenge.
+
+    Babel is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Foobar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Babel.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html ng-app='ui.keypress'>
+  <head>
+    <script type="text/javascript" src="js/ext/jquery-2.0.3.js"></script> 
+    <link rel="stylesheet" href="js/ext/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.css" />
+    <script type="text/javascript" src="js/ext/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script> 
+    <script type="text/javascript" src="js/ext/angular.js"></script> 
+    <script type="text/javascript" src="js/ext/ui-utils/modules/keypress/keypress.js"></script> 
+    <script type="text/javascript" src="js/challenge-lib.js"></script> 
+    <script type="text/javascript" src="js/challenge.js"></script> 
+    <link rel="stylesheet" href="css/challenge.css" />
+    <title>Challenge</title>
+  </head>
+  <body ng-controller="Challenge" id="challenge-controller">
+    <h1>pi-challenge</h1>
+    <div id="challenge_window" class="ui-widget-content ui-corner-all">
+      <div id="progressbar"></div>
+      <p>Errors: {{errors}}</p>
+      <p>Length: {{getLength()}}</p>
+      3.<input ng-change="checkPi()" id="text" class="ui-text ui-widget ui-state-default ui-corner-all" type="text" ng-model="userinput"/>
+    <div id="message">
+      {{message}}
+    </div>
+
+    </div>
+  </body>
+</html>
