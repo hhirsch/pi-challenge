@@ -15,7 +15,7 @@
 
     You should have received a copy of the GNU General Public License
     along with Babel.  If not, see <http://www.gnu.org/licenses/>.
--->
+  -->
 <html ng-app='ui.keypress'>
   <head>
     <script type="text/javascript" src="js/ext/jquery-2.0.3.js"></script> 
@@ -32,13 +32,12 @@
     <h1>pi-challenge</h1>
     <div id="challenge_window" class="ui-widget-content ui-corner-all">
       <div id="progressbar"></div>
-      <p>Errors: {{errors}}</p>
-      <p>Length: {{getLength()}}</p>
+      <p>Errors: {{errors}}  Length: {{getLength()}}</p>
       3.<input ng-change="checkPi()" id="text" class="ui-text ui-widget ui-state-default ui-corner-all" type="text" ng-model="userinput"/>
-    <div id="message">
-      {{message}}
+      <div id="message">
+	{{message}}
+      </div>
+      <input ng-click="revealNext()" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" type="button" value="Cheat" />      {{cheat}}
     </div>
-
-    </div>
-  </body>
+</body>
 </html>
