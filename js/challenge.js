@@ -32,9 +32,11 @@ function Challenge($scope) {
     });
 
     $scope.revealNext = function(){
-	$scope.errors++;
-	$scope.getLength();
-	$scope.cheat = $scope.pi.charAt($scope.userinput.length);
+	if($scope.cheat == ""){
+	    $scope.errors++;
+	    $scope.getLength();
+	    $scope.cheat = $scope.pi.charAt($scope.userinput.length);
+	}
     };
 
 
