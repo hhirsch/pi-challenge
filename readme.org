@@ -5,6 +5,7 @@ You can contact the author by email at babel at w3-net.de or through.
 
 * Additional Information
 In order to pull the submodules you have to enter:
-> git submodule init
+- git submodule init
+
 And then update the submodules with:
-> git submodule update --recursive
+- git submodule update --recursive
