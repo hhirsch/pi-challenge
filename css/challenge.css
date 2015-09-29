@@ -71,7 +71,6 @@
 
 #challenge_window{ 
     width: 900px; height: 600px; 
-    position: relative; 
     margin-top: 20px; margin: 50px; text-align: center;
 }
 
